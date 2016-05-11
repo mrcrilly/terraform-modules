@@ -1,4 +1,4 @@
-# Toolchain: Terraform Modules
+# Tools & Architectures: Terraform Modules
 These modules are generic AWS Terraform state files which can be freely used for setting up various parts of your infrastructure, or all of it.
 
 The modules are heavily documented in my open source book, [Tools & Architectures](https://www.gitbook.com/book/mrcrilly/toolchain/details).
