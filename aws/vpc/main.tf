@@ -1,4 +1,3 @@
-
 resource "aws_vpc" "primary" {
   cidr_block = "${var.in_vpc_cidr}"
 
