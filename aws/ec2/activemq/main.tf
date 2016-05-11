@@ -13,17 +13,17 @@ resource "aws_instance" "activemq" {
   subnet_id = "${var.subnet_id}"
 
   tags {
-    Name = "ActiveMQ-${count.index}"
+    Name = "activemq-${count.index}"
   }
 }
 
 resource "aws_security_group" "activemq_openwire" {
   vpc_id = "${var.vpc_id}"
   name = "activemq_openwire"
-  description = "ActiveMQ Openwire line protocol"
+  description = "activemq openwire protocol"
 
   tags = {
-    Name = "ActiveMQ Openwire"
+    Name = "activemq openwire"
   }
 
   ingress {
@@ -37,10 +37,10 @@ resource "aws_security_group" "activemq_openwire" {
 resource "aws_security_group" "activemq_stomp" {
   vpc_id = "${var.vpc_id}"
   name = "activemq_stomp"
-  description = "ActiveMQ STOMP line protocol"
+  description = "activemq stomp"
 
   tags = {
-    Name = "ActiveMQ STOMP"
+    Name = "activemq stomp"
   }
 
   ingress {
