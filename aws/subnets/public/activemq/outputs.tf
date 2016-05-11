@@ -1,7 +1,7 @@
-output "out_subnet_id" {
+output "id" {
   value = "${aws_subnet.public_activemq.id}"
 }
 
-output "out_subnet_cidr" {
+output "cidr_block" {
   value = "${aws_subnet.public_activemq.cidr_block}"
 }

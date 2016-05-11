@@ -1,8 +1,8 @@
 
-output "vpc_id" {
+output "id" {
   value = "${aws_vpc.primary.id}"
 }
 
-output "vpc_cidr_block" {
+output "cidr_block" {
   value = "${aws_vpc.primary.cidr_block}"
 }
