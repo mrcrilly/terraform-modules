@@ -1,2 +1,2 @@
 
-variable "in_vpc_cidr" {}
+variable "cidr" {}
