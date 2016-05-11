@@ -6,7 +6,7 @@ resource "aws_subnet" "public_mongodb" {
     Name = "public_mongodb"
   }
 
-  cidr_block = "${cidrsubnet(var.in_vpc_cidr, 8, vars.in_subnet_cidr)}"
+  cidr_block = "${cidrsubnet(var.in_vpc_cidr, 8, var.in_subnet_cidr)}"
 }
 
 resource "aws_network_acl" "public_mongodb" {

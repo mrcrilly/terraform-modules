@@ -6,7 +6,7 @@ resource "aws_subnet" "management_ssh_bastions" {
     Name = "management_ssh_bastions"
   }
 
-  cidr_block = "${cidrsubnet(var.in_vpc_cidr, 8, vars.in_subnet_cidr)}"
+  cidr_block = "${cidrsubnet(var.in_vpc_cidr, 8, var.in_subnet_cidr)}"
 }
 
 resource "aws_network_acl" "management_ssh_bastions" {
