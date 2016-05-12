@@ -1,3 +1,4 @@
-variable "in_vpc_id" {}
-variable "in_vpc_cidr" {}
-variable "in_subnet_cidr" {}
+variable "vpc_id" {}
+variable "vpc_cidr" {}
+variable "subnet_cidr" {}
+variable "routing_table_id" {}
