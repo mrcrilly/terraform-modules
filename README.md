@@ -3,6 +3,9 @@ These modules are generic AWS Terraform state files which can be freely used for
 
 The modules are heavily documented in my open source book, [Tools & Architectures](https://www.gitbook.com/book/mrcrilly/toolchain/details).
 
+## Terraform Version
+v0.6.16 was used at the time of writing.
+
 ## Submodules
 Remember, Terraform supports using sub directories in git repositories, hence why we've rolled everything up into one repository. Here is an example:
 

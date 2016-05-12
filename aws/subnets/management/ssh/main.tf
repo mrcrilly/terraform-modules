@@ -1,6 +1,7 @@
 
 resource "aws_subnet" "management_ssh_bastions" {
   vpc_id = "${var.in_vpc_id}"
+  map_public_ip_on_launch = true
 
   tags {
     Name = "management_ssh_bastions"

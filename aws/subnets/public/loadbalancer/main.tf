@@ -1,6 +1,7 @@
 
 resource "aws_subnet" "public_loadbalancer" {
   vpc_id = "${var.in_vpc_id}"
+  map_public_ip_on_launch = true
 
   tags {
     Name = "public_loadbalancer"
